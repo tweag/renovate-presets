@@ -42,7 +42,7 @@ files in select sub-directories (e.g. `examples`, `test`, `tests`).
 With Bazel modules enabled (bzlmod), Bazel will evaluate the requirements for the workspace's
 transitive dependencies selecting the latest compatible version for each Bazel module. For direct
 dependencies of the client's workspace, this can lead to a version being selected that is more 
-recent than the client has specified. This results in a warning message. It also could lead to
+recent than the client has specified. This results in a warning message. It could also lead to
 unexpected behavior for the client. 
 
 To minimize the risks from this type of upgrade, Bazel rulesets are encouraged to maintain the
