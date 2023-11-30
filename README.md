@@ -37,3 +37,16 @@ The
 preset is excluded because it defines `ignorePaths` that prevent the discovery of `MODULE.bazel`
 files in select sub-directories (e.g. `examples`, `test`, `tests`).
 
+### Why are updates to the root `MODULE.bazel` ignored?
+
+With Bazel modules enabled (bzlmod), Bazel will evaluate the requirements for the workspace's
+transitive dependencies selecting the latest compatible version for each Bazel module. For direct
+dependencies of the client's workspace, this can lead to a version being selected that is more 
+recent than the client has specified. This results in a warning message. It also could lead to
+unexpected behavior for the client. 
+
+To minimize the risks from this type of upgrade, Bazel rulesets are encouraged to maintain the
+lowest viable version for its external dependencies. As a corollary, client workspaces are
+encouraged to maintain the highest viable version for its external dependencies.
+
+For additional details, please see [this discussion](https://github.com/bazel-contrib/SIG-rules-authors/discussions/82).
