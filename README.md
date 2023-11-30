@@ -1,6 +1,6 @@
 # Renovate Presets
 
-This reposoitory contains [shared Renovate presets](https://docs.renovatebot.com/config-presets/)
+This repository contains [shared Renovate presets](https://docs.renovatebot.com/config-presets/)
 used by the Tweag organization.
 
 1. [ruleset_base.json](ruleset_base.json): This preset contains the settings that are useful
@@ -34,6 +34,6 @@ for the root `MODULE.bazel`.
 
 The
 [:ignoreModulesAndTests](https://github.com/renovatebot/renovate/blob/main/lib/config/presets/internal/default.ts#L291)
-preset is excluded becuase it defines `ignorePaths` that prevent the discovery of `MODULE.bazel`
+preset is excluded because it defines `ignorePaths` that prevent the discovery of `MODULE.bazel`
 files in select sub-directories (e.g. `examples`, `test`, `tests`).
 
