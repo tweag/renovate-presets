@@ -20,7 +20,7 @@ repository.
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>tweag/renovate-presets:ruleset_base",
-    "github>tweag/renovate-presets:mergify",
+    "github>tweag/renovate-presets:mergify"
   ]
 }
 ```
