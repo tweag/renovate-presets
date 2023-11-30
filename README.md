@@ -46,7 +46,7 @@ recent than the client has specified. This results in a warning message. It coul
 unexpected behavior for the client. 
 
 To minimize the risks from this type of upgrade, Bazel rulesets are encouraged to maintain the
-lowest viable version for its external dependencies. As a corollary, client workspaces are
-encouraged to maintain the highest viable version for its external dependencies.
+lowest viable version for their external dependencies. As a corollary, client workspaces are
+encouraged to maintain the highest viable version for their external dependencies.
 
 For additional details, please see [this discussion](https://github.com/bazel-contrib/SIG-rules-authors/discussions/82).
