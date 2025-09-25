@@ -5,6 +5,7 @@
     ":semanticPrefixFixDepsChoreOthers",
     "group:monorepos",
     "group:recommended",
+    "helpers:pinGitHubActionDigests",
     "replacements:all",
     "workarounds:all"
   ],
