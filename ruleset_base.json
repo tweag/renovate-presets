@@ -5,12 +5,13 @@
     ":semanticPrefixFixDepsChoreOthers",
     "group:monorepos",
     "group:recommended",
+    "helpers:pinGitHubActionDigests",
     "replacements:all",
     "workarounds:all"
   ],
   "packageRules": [
     {
-      "matchFiles": ["MODULE.bazel"],
+      "matchFileNames": ["MODULE.bazel"],
       "enabled": false
     }
   ]
